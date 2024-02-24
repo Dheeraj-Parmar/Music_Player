@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    background: #000;
+    padding: 3rem;
+}
+
+.main{
+    height: 80%;
+    background-color: #242323;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+
+}
+
+.songImage {
+    height: 100%;
+    width: 45%;
+    padding: 0 20px 0 10px;
+}
+
+.songs {
+    height: 100%;
+    width: 55%;
+    padding: 5px 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.songInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 550;
+    border-top: 2px solid rgba(255, 255, 255, 0.429);
+    padding: 10px 7px;
+    box-shadow: 5px 10px 10px black;
+    transition: 0.1s ease-in;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.songInfo:hover {
+    background-color: rgb(22, 22, 22);
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
+}
+
+.songInfo:nth-last-child(1) {
+    border-bottom: 2px solid rgb(255, 255, 255, 0.429);;
+}
+
+.songPic-Name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    pointer-events: none;
+}
+
+.songPic-Name img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 7px;
+    pointer-events: none;
+}
+
+.songTime {
+    font-size: 15px;
+    pointer-events: none;
+    padding-right: 7px;
+}
+
+.songImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 10px 15px 15px black;
+}
+
+.buttons {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 30px;
+}
+
+.buttons i {
+    height: 55px;
+    width: 55px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 5px 10px 10px rgb(27, 26, 26);
+}
+
+.buttons i:active {
+    transform: scale(0.8);
+}
+
+h3 {
+    text-align: center;
+}
+
+#play i {
+    padding-left: 10px;
+}
